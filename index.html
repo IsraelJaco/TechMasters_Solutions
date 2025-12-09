@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TechMasters Solutions — Tecnologia que impulsiona o seu sucesso</title>
+  <meta name="description" content="TechMasters Solutions — serviços de manutenção, redes, desenvolvimento de software e criação de sites em Angola." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --blue-primary:#0A65C0;
+      --blue-dark:#0D2A4A;
+      --gray:#6F7A86;
+      --white:#ffffff;
+      --radius:12px;
+      --max-width:1100px;
+      --container-padding:20px;
+      font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color:var(--blue-dark);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:#f6f8fa;color:var(--blue-dark);-webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--max-width);margin:0 auto;padding:30px var(--container-padding)}
+
+    /* Header */
+    header{background:var(--white);border-radius:14px;padding:18px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 6px 18px rgba(13,42,74,0.06)}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand img{height:56px;width:auto}
+    .brand h1{font-size:20px;margin:0;color:var(--blue-dark)}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:18px;align-items:center}
+    nav a{color:var(--blue-dark);text-decoration:none;font-weight:600}
+    .cta{background:var(--blue-primary);color:var(--white);padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin:28px 0}
+    .hero-card{background:var(--white);padding:34px;border-radius:14px;box-shadow:0 8px 30px rgba(10,101,192,0.08)}
+    .hero h2{margin:0 0 12px;font-size:28px;color:var(--blue-dark)}
+    .hero p{color:var(--gray);line-height:1.6}
+    .hero .actions{margin-top:18px;display:flex;gap:12px}
+    .btn-outline{padding:10px 14px;border-radius:8px;border:2px solid var(--blue-primary);text-decoration:none;font-weight:700;color:var(--blue-primary)}
+
+    /* Services */
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0}
+    .service{background:var(--white);padding:20px;border-radius:12px;min-height:140px;box-shadow:0 6px 18px rgba(13,42,74,0.04)}
+    .service h3{margin:0 0 10px}
+    .service p{margin:0;color:var(--gray);font-size:14px}
+
+    /* About & Contact */
+    .two-cols{display:grid;grid-template-columns:1fr 420px;gap:24px;margin:28px 0}
+    .contact{background:var(--white);padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(13,42,74,0.04)}
+    label{display:block;margin:10px 0 6px;font-weight:600}
+    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ee;font-size:14px}
+    button[type=submit]{background:var(--blue-primary);color:var(--white);border:none;padding:12px 16px;border-radius:10px;font-weight:700;margin-top:12px}
+
+    /* Footer */
+    footer{margin-top:36px;padding:18px 0;text-align:center;color:var(--gray)}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero,.two-cols{grid-template-columns:1fr}
+      nav ul{display:none}
+      header{padding:14px}
+    }
+    @media (max-width:520px){
+      .brand img{height:44px}
+      .hero h2{font-size:22px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <!-- Substitua "logo.png" pelo ficheiro do logotipo real -->
+        <img src="logo.png" alt="TechMasters Solutions Logo" />
+        <div>
+          <h1>TechMasters Solutions</h1>
+          <div style="font-size:12px;color:var(--gray);font-weight:600">Tecnologia que impulsiona o seu sucesso</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contactos">Contactos</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#contactos">Pedir Orçamento</a>
+    </header>
+
+    <section class="hero">
+      <div class="hero-card">
+        <h2>Serviços informáticos profissionais para empresas e particulares</h2>
+        <p>Oferecemos manutenção, criação de software, montagem de redes, criação de websites, instalação e manutenção de sistemas operativos e soluções personalizadas. Atendimento rápido, técnico qualificado e suporte pós-venda.</p>
+
+        <div class="actions">
+          <a class="cta" href="#contactos">Solicitar Orçamento</a>
+          <a class="btn-outline" href="#servicos">Ver Serviços</a>
+        </div>
+
+        <div style="margin-top:18px;color:var(--gray);font-size:13px">
+          <strong>Horário:</strong> Segunda — Sexta, 08:00 — 18:00<br>
+          <strong>Telefone:</strong> +244 122 455 789
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;justify-content:center;">
+        <div style="background:linear-gradient(180deg,var(--blue-primary),var(--blue-dark));padding:26px;border-radius:12px;color:var(--white);text-align:center;max-width:420px;">
+          <h3 style="margin:0;font-size:20px;">Precisa de ajuda?</h3>
+          <p style="margin:10px 0 0;line-height:1.5">Peça já uma visita técnica ou um orçamento gratuito. Atendemos em todo o país.</p>
+          <a href="#contactos" style="display:inline-block;margin-top:14px;background:rgba(255,255,255,0.12);padding:10px 14px;border-radius:8px;color:#fff;text-decoration:none;font-weight:700">Contacte-nos</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+        <h2 style="margin:0">Nossos Serviços</h2>
+        <div style="color:var(--gray);font-weight:600">Soluções completas de TI</div>
+      </div>
+
+      <div class="services">
+        <article class="service">
+          <h3>Manutenção e Suporte</h3>
+          <p>Manutenção preventiva e corretiva, formatação, remoção de vírus, recuperação de dados e suporte remoto.</p>
+        </article>
+        <article class="service">
+          <h3>Instalação de Sistemas</h3>
+          <p>Instalação e configuração de Windows, Linux, e suporte pós-instalação com backup e optimização.</p>
+        </article>
+        <article class="service">
+          <h3>Redes e Conectividade</h3>
+          <p>Montagem de redes LAN, Wi‑Fi, cabeamento estruturado e configuração de servidores e firewalls.</p>
+        </article>
+
+        <article class="service">
+          <h3>Desenvolvimento de Software</h3>
+          <p>Sistemas de gestão, aplicações web e desktop, integração com APIs e chatbots com IA.</p>
+        </article>
+        <article class="service">
+          <h3>Criação de Websites</h3>
+          <p>Sites institucionais, lojas online, sites responsivos e optimização básica para motores de busca (SEO).</p>
+        </article>
+        <article class="service">
+          <h3>Consultoria e Segurança</h3>
+          <p>Auditoria de segurança, planeamento de infraestruturas, formação e políticas de backup.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="two-cols">
+      <div>
+        <div style="background:var(--white);padding:22px;border-radius:12px;box-shadow:0 6px 18px rgba(13,42,74,0.04)">
+          <h2 id="sobre">Sobre a TechMasters Solutions</h2>
+          <p style="color:var(--gray);line-height:1.6">A TechMasters Solutions nasceu para oferecer soluções tecnológicas acessíveis e eficazes. Contamos com uma equipa de técnicos especializados em manutenção, redes e desenvolvimento, prontos para apoiar empresas e particulares a aumentarem a sua produtividade através da tecnologia.</p>
+
+          <ul style="color:var(--gray);padding-left:18px">
+            <li>Atendimento profissional e prazo cumprido</li>
+            <li>Serviço pós-venda e contratos de manutenção</li>
+            <li>Suporte remoto e presencial</li>
+          </ul>
+        </div>
+
+        <div style="margin-top:16px;display:flex;gap:12px">
+          <div style="flex:1;background:var(--white);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(13,42,74,0.04)">
+            <h3 style="margin-top:0">Missão</h3>
+            <p style="color:var(--gray);margin:0">Fornecer soluções tecnológicas modernas, seguras e acessíveis que impulsionem o sucesso dos nossos clientes.</p>
+          </div>
+          <div style="flex:1;background:var(--white);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(13,42,74,0.04)">
+            <h3 style="margin-top:0">Visão</h3>
+            <p style="color:var(--gray);margin:0">Ser referência em serviços informáticos em Angola, reconhecida pela qualidade e inovação.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="contact" id="contactos">
+        <h3>Contacte-nos</h3>
+        <p style="color:var(--gray);margin-top:6px">Preencha o formulário e responderemos em até 24h úteis.</p>
+        <form action="#" method="post" onsubmit="alert('Formulário simulado — substitua a ação pelo endpoint real.');return false;">
+          <label for="nome">Nome completo</label>
+          <input id="nome" name="nome" placeholder="Seu nome" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="seu@exemplo.com" required />
+
+          <label for="servico">Serviço de interesse</label>
+          <select id="servico" name="servico">
+            <option>Manutenção e Suporte</option>
+            <option>Instalação de Sistemas</option>
+            <option>Redes e Conectividade</option>
+            <option>Desenvolvimento de Software</option>
+            <option>Criação de Websites</option>
+            <option>Consultoria</option>
+          </select>
+
+          <label for="mensagem">Mensagem / Detalhes</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva o seu pedido"></textarea>
+
+          <button type="submit">Enviar Mensagem</button>
+        </form>
+
+        <div style="margin-top:14px;color:var(--gray);font-size:14px">
+          <strong>Telefone:</strong><br />+244 122 455 789<br />
+          <strong>Email:</strong><br />contact@techmastersolutions.com
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <div style="max-width:var(--max-width);margin:0 auto;padding:18px;color:var(--gray);font-size:14px">
+        © <span id="year"></span> TechMasters Solutions — Todos os direitos reservados. • <span style="color:var(--blue-dark);font-weight:700">Luanda, Angola</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
